@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário</title>
+        <style>
+            body {
+                font-family: 'Times New Roman', Times, serif;
+              
+            }
+             fieldset {
+                 width: 32%;
+             }
+             h3 {
+                 text-align: center;
+             }
+
+             #user {
+                margin-left: 15px;
+             }
+             #usuario {
+                margin-left: 23px;
+                width: 200px;
+             }
+            .sen {
+                display: flex;
+            }
+            .um {
+                display: inline-block;
+            }
+          
+            #senha {
+               width: 90px;
+                margin-left: 27px;
+            }
+            #esqueceu {
+                margin-left: 15px;  
+            }
+            #lab {
+                margin-left: 15px;  
+            }
+            .rel {
+                display: flex;
+                margin-left: 40px;
+
+            }
+            .log {
+                display: inline-block; 
+            }
+            #cadastra {
+                margin-left: 15px;
+                width: 110%;
+                height: 150%;
+            }
+            #login {
+                width: 110%;
+               height: 150%;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="" method="POST">
+            <fieldset>
+                <h3>Tela de Login</h3>
+                <br> <br> 
+                <label id="user" for="usuario"><b>Usário</b></label>
+                <input type="text" name="usuario" id="usuario" required> 
+                <br>
+                <br>
+                <section class="sen">
+                    <div id=um>
+                        <label for="senha" id="lab"><b>Senha</b></label>
+                        <input type="password" name="senha" id="senha" required>
+                    </div>
+                    <div>
+                        <a href="senha" id="esqueceu" target="_blank">Esqueceu a senha? Clique aqui</a>
+                    </div>
+                </section>
+                <br> <br>
+                <section class="rel">
+                    <div class="log">
+                        <input type="submit" value="Fazer Login" name="login" id="login">
+                    </div>
+                    <div>
+                        <input type="submit" value="Cadastrar" name="casdrastrar" id="cadastra">
+                    </div>
+                </section>
+                <br>
+            </fieldset>
+        </form>
+        
+    </body>
+</html>

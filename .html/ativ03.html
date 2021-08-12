@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário</title>
+        <style>
+            label, input, textarea {
+                margin-top: 8px;
+            }
+
+            .comeco {
+            padding: 0;
+            margin: 0;
+            }
+
+            .principal {
+                width: 60%;
+                height: 63vh;
+                border: solid black;
+            
+            }
+
+            .tabela {
+            display: flex;
+            justify-content: center;
+            }
+
+            .tab {
+                width: 100%;
+                
+            }
+
+            .tabe {
+                background-color: rgb(163, 190, 240);
+            }
+            .texto {
+                display: inline-block;
+                width: 20%;
+            }
+
+            #nome {
+                width: 60%;
+            }
+
+            #sigla {
+                width: 10%;
+            }
+
+            .status {
+                margin-left: 32%;
+                margin-right: 15%;
+            }
+           
+            .data {
+               width: 54%;
+               display:inline-block;
+            }
+
+            #ativacao {
+                width: 25%;
+            }
+
+            #desativacao {
+                width: 25%;
+                height: 30%;
+                margin-left: 27%;
+            }
+           
+            #origem {
+                width: 56%;
+                margin-right: 1px;
+            }
+            .div {
+                display: flex;
+                justify-content: space-between;
+            }
+            .numero {
+                display: flex;
+            }
+
+            #superior {
+                width: 56%;
+                margin-right: 1px;
+            }
+            .comentario {
+                display: flex;
+                align-items: center;
+            }
+
+            .botx {
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .form {
+                background-color: rgb(221, 221, 221);
+            }
+            .dois {
+                background-color: rgb(163, 190, 240);  
+            }
+            .tres {
+                background-color: rgb(221, 221, 221); 
+            }
+
+        </style>
+    </head>
+    <body>
+        <section class="principal">
+            <h4 class="comeco">
+                Manutenção de Órgão Colegiado
+            </h4>
+            <br> 
+            <div class="tabela">
+                <table border="1">
+                    <tr>
+                        <td class="dois">
+                            <b>Unidade</b>
+                        </td>
+                        <td class="tres">
+                            FACULDADE DE ENGENHARIA DE ILHA SOLTEIRA
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="dois">
+                            <b>
+                                Tipo Colegiado
+                            </b>
+                        </td>
+                        <td class="tres">
+                            CONGREGAÇÃO
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+            <br>
+            <table class="tab" border="1">
+                <tr>
+                    <td class="tabe">
+                        Órgão Colegiado
+                    </td> 
+                </tr>
+            </table>
+                
+            
+            <div class="form">
+                <form action="" method="POST">
+                    <fieldset>
+                        <label class="texto" for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="CONGRAGAÇÃO DA FACULDADE DE ILHA SOLTEIRA" required>
+                        <br> 
+                        <label class="texto" for="sigla">Sigla</label>
+                        <input type="text" name="sigla" id="sigla" placeholder="CFIS" required>
+
+                        <label class="status" for="status">Status</label>
+                        <select name="status" id="status">
+                            <option value="ATIVADO">ATIVADO</option>
+                            <option value="DESATIVADO">DESATIVADO</option>
+                        </select> <br>
+                        <div class="div">
+                            <div>                     
+                                    <label class="data" for="ativacao">Data Ativação</label>
+                                    <input type="text" name="ativacao" id="ativacao" placeholder="15/10/2000"> 
+                            </div>
+                            <div class="numero">
+                                    <label class="desa" for="desativacao"> <div>Data</div> <div>Desativação</div></label>
+                                    <input type="text" name="desativacao" id="desativacao" required> 
+                            </div>
+                        </div>
+                        <label class="texto" for="origem">Órgão de Origem</label>
+                        <input type="text" name="origem" id="origem" required>
+
+                        <button>Buscar</button>
+                            <br>
+                        <label class="texto" for="superior">Órgão Superior</label>
+                        <input type="text" name="superior" id="superior" required>
+
+                        <button>Buscar</button> 
+                        <br>
+                        <div class="comentario">
+                            <label class="texto"for="documentacao">Documentação</label>
+                            <textarea name="documentacao" id="documentacao" cols="58" rows="3" placeholder="Órgão criado com o objetivo de aprovar normas da unidade."></textarea> 
+                         </div>
+                         <br>
+                        <div class="botx">
+                          <button>Salvar</button> <button>Excluir</button>
+                        </div>
+                    </fieldset>
+                </form>
+
+            </div>
+        </section>
+        
+    </body>
+</html>
